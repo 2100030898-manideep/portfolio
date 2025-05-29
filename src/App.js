@@ -7,6 +7,7 @@ import Particle from "./Components/Particle";
 import { useGlobalContext } from "./Context";
 import { ThemeProvider } from "styled-components";
 
+
 const App = () => {
   const [loading, setLoading] = useState(false);
 

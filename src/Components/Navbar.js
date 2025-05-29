@@ -71,6 +71,15 @@ function Navbar() {
               </NavLink>
             </li>
             <li>
+              <NavLink className="nav-link link" to="/certifications" onClick={() => setSidebar(false)}>
+                <span className="icon">
+                  🎓
+                </span>
+                <span className="link">Certifications</span>
+              </NavLink>
+            </li>
+
+            <li>
               <NavLink className="nav-link link" to="/contact" onClick={() => setSidebar(false)}>
                 <span className="icon">
                   <FaPhoneAlt />
@@ -194,6 +203,9 @@ const Wrapper = styled.section`
             text-transform: uppercase;
             color: rgb(${({ theme }) => theme.title.primary});
             transition: all 0.2s ease-in;
+            white-space: normal;
+            word-wrap: break-word;
+            text-align: center;
             &:before {
               content: normal;
             }

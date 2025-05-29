@@ -10,6 +10,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Contact from "./Pages/Contact";
 import Header from "./Components/Header";
+import Certifications from "./Pages/Certifications";
+
 
 
 AOS.init({
@@ -34,6 +36,7 @@ const Content = () =>{
                 <Route path="/portfolio" element={<Portfolio />} />
                 <Route path="/resume" element={<Resume />} />
                 <Route path="/contact" element={<Contact />} />
+                <Route path="/certifications" element={<Certifications />} />
               </Route>
             </Route>
             <Route path="*" element={<ErrorPage />} />
